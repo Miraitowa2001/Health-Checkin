@@ -12,9 +12,9 @@ assert info['password'] != '', "Expected infomation `password` not found. Check 
 try:
     info['User_Agent'] = os.environ['USER_AGENT']
     if info['User_Agent'] == '':
-        info['User_Agent'] = 'Mozilla/5.0 (Linux; Android 12; M2007J1SC Build/SKQ1.220303.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36 cpdaily/9.0.15 wisedu/9.0.15'
+        info['User_Agent'] = 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 (5612718592)cpdaily/9.0.15  wisedu/9.0.15'
 except KeyError:
-    info['User_Agent'] = 'Mozilla/5.0 (Linux; Android 12; M2007J1SC Build/SKQ1.220303.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36 cpdaily/9.0.15 wisedu/9.0.15'
+    info['User_Agent'] = 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 (5612718592)cpdaily/9.0.15  wisedu/9.0.15'
 
 try:
     info['location'] = os.environ['LOCATION']
